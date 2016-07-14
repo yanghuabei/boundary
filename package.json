@@ -1,0 +1,24 @@
+{
+    "name": "boundary",
+    "description": "Utility to produce kinds of boundary data from json schema definition.",
+    "version": "0.1.0",
+    "main": "lib/index.js",
+    "author": "yanghuabei",
+    "repository": "yanghuabei/boundary",
+    "license": "MIT",
+    "scripts": {
+        "compile": "babel src --out-dir lib",
+        "coveralls": "cat ./coverage/lcov.info | coveralls",
+        "prepublish": "npm run compile",
+        "test": "babel-node ./node_modules/.bin/isparta cover _mocha"
+    },
+    "devDependencies": {
+        "babel-cli": "*",
+        "babel-preset-es2017": "*",
+        "coveralls": "*",
+        "chai": "*",
+        "isparta": "*",
+        "mocha": "*",
+        "sinon": "*"
+    }
+}
